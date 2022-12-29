@@ -2987,6 +2987,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .block-process {
   padding: 100px 0 160px;
+  margin-bottom: -1px;
   position: relative;
   background-color: var(--black);
 }
