@@ -1,0 +1,27 @@
+.about__inner {
+  display: flex;
+  align-items: center;
+  @include adaptiv-value(column-gap, 50, 20, 0);
+
+  @media (max-width: $mobile-sm) {
+    flex-direction: column-reverse;
+  }
+}
+
+.about__preview {
+  width: 90%;
+  user-select: none;
+
+  @media (min-width: $mobile-sm) {
+    width: 50%;
+  }
+}
+
+.about__right {
+  margin-bottom: 30px;
+
+  @media (min-width: $mobile-sm) {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}

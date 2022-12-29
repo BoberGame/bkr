@@ -1,0 +1,19 @@
+.hero-block {
+  position: relative;
+  margin-bottom: 105px;
+}
+
+.hero-block__text {
+  color: var(--white);
+
+  @media (min-width: $mobile) {
+    max-width: 475px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 4;
+
+    transform: translateY(-50%);
+  }
+}

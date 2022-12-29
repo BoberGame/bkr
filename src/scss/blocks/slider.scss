@@ -1,0 +1,34 @@
+.swiper {
+  position: static;
+
+  & .swiper-wrapper {
+    position: static;
+  }
+}
+
+.swiper-testimonials {
+  & .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -65px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+
+    background-color: #9EAD8D;
+    opacity: 1;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &-active {
+      width: 16px;
+      height: 16px;
+      background-color: var(--black);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+:root {
+  /* Colors */
+  --black: #171B1B;
+  --white: #FFFFFF;
+  --grey: rgba(51, 51, 51, 0.5);
+
+  /* Fonts */
+  --font-main: Ultra;
+  --font-text: DMSans;
+  --font-second: Oswald;
+}
+
+$browser-fontsize: 16;
+
+/* Container */
+$container-padding: 30px;
+$container-maxwidth: 1170px;
+
+/* Media */
+$laptop-lg: 1400px;
+$laptop: 1140px;
+$tablet: 992px;
+$mobile: 769px;
+$mobile-sm: 576px;
+$mobile-xs: 446px;
+$mobile-min: 375px;

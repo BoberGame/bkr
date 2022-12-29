@@ -1,0 +1,25 @@
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: var(--font-main), sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img,
+button,
+svg {
+  vertical-align: middle;
+}

@@ -1,0 +1,19 @@
+.products {
+  margin-bottom: 110px;
+}
+
+.products__grid {
+  display: grid;
+  margin-bottom: 40px;
+  gap: 10px;
+
+  @media (min-width: $mobile-sm) {
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(271px, 1fr));
+  }
+
+  @media (min-width: $mobile) {
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+}

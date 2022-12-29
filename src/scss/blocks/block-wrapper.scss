@@ -1,0 +1,120 @@
+.block-process {
+  padding: 100px 0 160px;
+  position: relative;
+
+  background-color: var(--black);
+
+  &::before {
+    width: 220px;
+    height: 100px;
+    content: '';
+    background: url('../img/decorate/1.svg') top left no-repeat;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  & .features__inner {
+    @media (min-width: $mobile-sm) {
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+
+    @media (min-width: $laptop) {
+      gap: 0;
+    }
+  }
+
+  & .features__item {
+    padding: 40px 45px 56px 33px;
+    height: 384px;
+
+    &:nth-child(2) {
+      background-color: #FBB65F;
+
+      & > .features__img {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      & > .features__icon {
+        fill: var(--white);
+      }
+
+      @media (min-width: $laptop) {
+        height: auto;
+
+        & > .features__title {
+          margin-bottom: 35px;
+        }
+      }
+    }
+
+    @media (max-width: $laptop) {
+      & > .features__img {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      & > .features__icon {
+        fill: var(--white);
+      }
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #FBB65F;
+      }
+    }
+  }
+
+  &::after {
+    @media (min-width: $mobile) {
+      content: '';
+      width: 25%;
+      height: 30%;
+
+      position: absolute;
+      bottom: -15%;
+      right: 0;
+      z-index: 2;
+
+      background: url('../img/decorate/2.svg') bottom right no-repeat;
+    }
+  }
+}
+
+.block-recipes {
+  padding-bottom: 160px;
+  position: relative;
+
+  background-color: var(--black);
+
+  &::before {
+    width: 160px;
+    height: 140px;
+    content: '';
+    background: url('../img/decorate/3.svg') bottom left no-repeat;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.block-recipes__grid {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 40px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $laptop) {
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  @media (min-width: $mobile) {
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+}

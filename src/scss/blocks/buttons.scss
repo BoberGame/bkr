@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  padding: em(11) em(46);
+
+  font-size: 16px;
+  font-family: var(--font-second);
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  border-radius: 2px;
+  color: var(--white);
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #F9BF77;
+      color: var(--white);
+    }
+  }
+
+  &_dark {
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #000000;
+    border-radius: 2px;
+  }
+
+  &_light {
+    color: #000;
+    border: 1px solid rgba(23, 27, 27, 0.25);
+  }
+
+  &_outline {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,146 @@
+.footer {
+  position: relative;
+  padding-top: 55px;
+
+  background: var(--black) url('../img/decorate/4.svg') bottom center no-repeat;
+  background-size: 13%;
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 60px;
+
+  @media (max-width: $mobile-sm) {}
+}
+
+.footer__col {
+  margin-right: 40px;
+
+  @media (max-width: $mobile-sm) {
+    &:last-child {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: $mobile-xs) {
+    &:last-child {
+      margin: 30px auto 0;
+    }
+  }
+}
+
+.footer__logo {
+  margin-right: 40px;
+  margin-bottom: 30px;
+
+  color: var(--white);
+  font-size: 40px;
+  user-select: none;
+
+  @media (max-width: $mobile-sm) {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+.footer__title {
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  line-height: 2;
+  color: var(--white);
+  font-family: var(--font-second);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.footer__link {
+  font-size: 16px;
+  line-height: 2;
+  color: var(--white);
+  font-family: var(--font-text);
+  text-decoration: none;
+  transition: color 0.1s linear;
+
+  &_grey {
+    color: rgba(255, 255, 255, 0.50);
+  }
+
+  @media (any-hover: hover) {
+    &:not(.footer__link_grey):hover {
+      color: #F5AE5C;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+
+  background-color: #F5AE5C;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--white);
+
+      & > .socials__icon {
+        fill: #F5AE5C;
+      }
+    }
+  }
+}
+
+.socials__icon {
+  max-width: 16px;
+  max-height: 16px;
+
+  fill: var(--white);
+  transition: fill 0.2s ease-out;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 36px 0 34px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  @media (max-width: $mobile) {
+    padding: 20px 0;
+
+    & .footer__link {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: $mobile-sm) {
+    justify-content: center;
+
+  }
+}
+
+.copyright__menu {
+  display: flex;
+  @include adaptiv-value(column-gap, 90, 15, 0);
+}

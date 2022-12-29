@@ -1,0 +1,70 @@
+.menu-burger {
+  display: none;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+
+  &__body {
+    display: none;
+  }
+
+  @media (max-width: $mobile) {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 23px;
+
+    cursor: pointer;
+
+    &:before,
+    &:after,
+    & span {
+      position: absolute;
+      right: 0;
+      z-index: 5;
+
+      height: 1px;
+      width: 100%;
+
+      background-color: var(--black);
+      transition: all 0.3s ease;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+
+    & span {
+      top: 50%;
+      transform: scale(1) translateY(-50%);
+    }
+
+    &.active {
+      span {
+        transform: scale(0) translateY(-50%);
+      }
+
+      &::before {
+        top: 50%;
+        transform: rotate(-45deg) translateY(-50%);
+      }
+
+      &::after {
+        bottom: 50%;
+        transform: rotate(45deg) translateY(50%);
+      }
+    }
+  }
+}

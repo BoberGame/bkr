@@ -1,0 +1,35 @@
+@import "vendor/reset";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "global";
+@import "helpers";
+
+/* Swiper */
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+
+/* AOS */
+@import 'vendor/aos';
+
+/* Blocks */
+@import "blocks/page";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/buttons";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/section";
+@import "blocks/tabs";
+@import "blocks/card";
+@import "blocks/features";
+@import "blocks/menu-burger";
+@import "blocks/hero-block";
+@import "blocks/play";
+@import "blocks/products";
+@import "blocks/block-wrapper";
+@import "blocks/testimonials";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/slider";
