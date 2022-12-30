@@ -2990,7 +2990,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .block-process {
   padding: 100px 0 160px;
-  margin-bottom: -1px;
   position: relative;
   background-color: var(--black);
 }
@@ -3936,11 +3935,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .webp .intro { background: url(../img/intro-bg.webp) top no-repeat; }
-<<<<<<< HEAD
 
 @media (max-width: 1140px) {
 
   .webp .intro { background: url(../img/intro-bg.webp) top/cover no-repeat; }
 }
-=======
->>>>>>> 9fdd66076e43de56f1749048e9b7a56a2cb9913a
