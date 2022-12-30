@@ -24,10 +24,10 @@ function scrollTo(mediaWidth, mediaType = 2) {
   };
 
   const mediaQuery = mediaWidth ? getMediaQuery(mediaWidth, mediaType) : getMediaQuery(0, mediaType);
-
   if (scrollButtons.length > 0) {
     scrollButtons.forEach((btn) => {
       const scrollOffsetTop = getScrollOffset(btn);
+
       if (mediaQuery.matches) {
         btn.addEventListener('click', (event) => {
           windowScroll(event, scrollOffsetTop);

@@ -8,7 +8,7 @@
 
   @media (max-width: $laptop) {
     padding: 140px 0;
-    background-size: cover;
+    background: url('../img/intro-bg.jpg') top / cover no-repeat;
   }
 
   @media (max-width: $mobile) {
