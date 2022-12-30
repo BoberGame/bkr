@@ -40,8 +40,8 @@ const videoModule = (wrapper, videoWrapper) => {
         if (!btn.classList.contains(playClassName)) {
           if (mediaQuery.matches) {
             launchVideo(videoItem, btn);
-            enableControls(videoItem);
           }
+          enableControls(videoItem);
           videoItem.play();
         }
       });
