@@ -31,7 +31,7 @@ burger('.nav__menu');
 initTabs(false);
 
 /* Init video function */
-videoModule('.play__wrapper', '.play__video');
+videoModule();
 
 /* Init aos */
 AOS.init({
